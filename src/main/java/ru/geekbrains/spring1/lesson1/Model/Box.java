@@ -6,6 +6,10 @@ public class Box {
     private String color;
     private int size;
 
+    public Box(){
+
+    }
+
     public Box(long id, String color, int size) {
         this.id = id;
         this.color = color;
