@@ -19,15 +19,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-           <td th:text="${boxes.get(0).id}"/>
-           <td th:text="${boxes.get(0).color}"/>
-           <td th:text="${boxes.get(0).size}"/>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Green</td>
-            <td>200</td>
+        <tr th:each="b : ${boxes}">
+           <td th:text="${b.id}"/>
+           <td th:text="${b.color}"/>
+           <td th:text="${b.size}"/>
         </tr>
         </tbody>
     </table>
